@@ -12,9 +12,9 @@ int secondValue = GetSecondValue(number);
 Console.WriteLine($"Вторая цифра - {secondValue}");
 
 
-int GetSecondValue(int number)
+int GetSecondValue(int number1)
 {
-    int numbers = number / 10;
-    int second = numbers % 10;
+     number1 = number / 10;
+    int second = number1 % 10;
     return second;
 }
