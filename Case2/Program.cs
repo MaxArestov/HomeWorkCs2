@@ -2,7 +2,7 @@
 Console.Clear();
 Console.Write("Введите любое число, больше 99: ");
 int num = Convert.ToInt32(Console.ReadLine());
-if(num < 100)
+if(num <= 100)
 {
     Console.WriteLine("Третьей цифры нет.");
     return;
