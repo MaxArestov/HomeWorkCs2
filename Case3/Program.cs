@@ -7,22 +7,22 @@ if(num < 1 & num > 7)
     Console.WriteLine("От единицы до семерки");
     return;
 }
-int check = CheckWeekday(num);
-if(check == 1) Console.WriteLine("Выходной");
+bool check = CheckWeekday(num);
+if(check == true) Console.WriteLine("Выходной");
 else Console.WriteLine("Рабочий день");
 
 
 
-int CheckWeekday(int number)
+bool CheckWeekday(int number)
 {
     number = num;
     if (number == 6 || number == 7)
     {
-        number = 1;
+        return true;
     }
     else
     {
-        number = 0;
+        return false;
     }
-    return number;
+    
 }
